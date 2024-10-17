@@ -1,7 +1,7 @@
-Project Description
+Project Description >
 This project is a technical analysis program based on the Moving Averages (MA) strategy. Users can upload market price data files and apply short-term and long-term moving average strategies to view buy and sell signals. The overall profit is displayed as a percentage, along with analytical charts.
 
-Functional Requirements
+Functional Requirements >
 Uploading Price Data Files:
 Users can upload text files in txt or prn format that contain the following columns:
 
@@ -24,7 +24,7 @@ The overall profit is calculated and displayed as a percentage in a message box.
 Result Charts:
 Charts showing prices with buy and sell signals, along with short-term and long-term moving averages, are provided.
 
-Non-Functional Requirements
+Non-Functional Requirements >
 Graphical User Interface (GUI):
 A simple GUI is implemented using the Tkinter library to allow user interaction.
 
@@ -34,7 +34,7 @@ Warning and error messages are shown in case of issues (e.g., file not uploaded 
 Color and Design:
 Appropriate colors are used for buttons and text to ensure a simple and easy-to-understand interface.
 
-Constraints
+Constraints >
 The data file must contain the specified columns and follow the correct format; otherwise, it will not be processed.
 Data should be in the specified time intervals with a valid date format (YYYYMMDD) and valid price data.
 The program only supports .txt and .prn files.
