@@ -1,36 +1,52 @@
-•	شرح پروژه
-این پروژه یک برنامه تحلیل تکنیکال مبتنی بر استراتژی میانگین متحرک (Moving Averages) است. کاربران می‌توانند فایل‌های داده مربوط به قیمت‌های بازار مالی را آپلود کنند و سپس از طریق انتخاب استراتژی میانگین‌های متحرک کوتاه‌مدت و بلند‌مدت، سیگنال‌های خرید و فروش را مشاهده کنند. همچنین نتایج مربوط به سود کلی به‌صورت درصد نمایش داده می‌شود و نمودار‌های تحلیلی ارائه می‌گردد.
+Project Description
+This project is a technical analysis program based on the Moving Averages (MA) strategy. Users can upload market price data files and apply short-term and long-term moving average strategies to view buy and sell signals. The overall profit is displayed as a percentage, along with analytical charts.
 
-•	نیازمندی‌های عملکردی
-آپلود فایل داده‌های قیمت: کاربر می‌تواند فایل‌های متنی با فرمت txt یا prn را آپلود کند که شامل ستون‌های زیر باشد:
-ستون تاریخ: با فرمت YYYYMMDD
-قیمت باز (Open)
-قیمت بالا (High)
-قیمت پایین (Low)
-قیمت بسته (Close)
-انتخاب استراتژی میانگین متحرک: دو گزینه برای استراتژی میانگین‌های متحرک وجود دارد:
-استراتژی 20/50: میانگین متحرک کوتاه‌مدت 20 روزه و بلند‌مدت 50 روزه.
-استراتژی 100/200: میانگین متحرک کوتاه‌مدت 100 روزه و بلند‌مدت 200 روزه.
-سیگنال‌های خرید و فروش: با توجه به تقاطع میانگین‌های متحرک، سیگنال‌های خرید (با استفاده از علامت ^) و فروش (با استفاده از علامت v) روی نمودار نمایش داده می‌شوند.
-نمایش نتایج معاملات: سود کلی معاملات به‌صورت درصدی محاسبه و در یک پنجره پیام (Message Box) نمایش داده می‌شود.
-نمودار نتایج: نمودار قیمت‌ها همراه با سیگنال‌های خرید و فروش و میانگین‌های متحرک کوتاه و بلند نمایش داده می‌شود.
-•	نیازمندی‌های غیرعملکردی
-رابط کاربری گرافیکی (GUI): رابط گرافیکی ساده‌ای با استفاده از کتابخانه Tkinter برای تعامل کاربر فراهم شده است.
-نمایش پیام‌ها: پیام‌های هشدار و خطا در صورت بروز مشکلات (مثلاً عدم آپلود فایل یا خطا در پردازش فایل) از طریق پنجره‌های پیام به کاربر نمایش داده می‌شود.
-رنگ‌بندی و طراحی: از رنگ‌های مناسب برای هر دکمه و متن استفاده شده تا رابط کاربری ساده و قابل فهم باشد.
-•	محدودیت‌ها
-فایل داده باید شامل ستون‌های مشخص و فرمت درست باشد، در غیر این صورت پردازش فایل انجام نخواهد شد.
-داده‌ها باید در بازه‌های زمانی مشخص و با فرمت YYYYMMDD برای ستون تاریخ و داده‌های قیمت معتبر باشند.
-این برنامه فقط با فایل‌های متنی با پسوند .txt و .prn کار می‌کند.
-•	مراحل و تحویل‌ها
-طراحی و پیاده‌سازی رابط گرافیکی (GUI).
-پیاده‌سازی استراتژی‌های 20/50 و 100/200 برای تحلیل داده‌ها.
-نمایش سیگنال‌های خرید و فروش بر روی نمودار و محاسبه سود کلی معاملات.
-تحویل نسخه نهایی با تست و دیباگ نهایی.
-•	کتابخانه‌ها و وابستگی‌ها
-کتابخانه‌های مورد نیاز:
+Functional Requirements
+Uploading Price Data Files:
+Users can upload text files in txt or prn format that contain the following columns:
+
+Date column: Format YYYYMMDD
+Open price
+High price
+Low price
+Close price
+Selecting a Moving Average Strategy:
+Two options are available for the moving average strategy:
+
+20/50 Strategy: A 20-day short-term MA and a 50-day long-term MA
+100/200 Strategy: A 100-day short-term MA and a 200-day long-term MA
+Buy and Sell Signals:
+Buy signals (marked with ^) and sell signals (marked with v) are displayed on the chart based on the crossover of the moving averages.
+
+Display of Trade Results:
+The overall profit is calculated and displayed as a percentage in a message box.
+
+Result Charts:
+Charts showing prices with buy and sell signals, along with short-term and long-term moving averages, are provided.
+
+Non-Functional Requirements
+Graphical User Interface (GUI):
+A simple GUI is implemented using the Tkinter library to allow user interaction.
+
+Display Messages:
+Warning and error messages are shown in case of issues (e.g., file not uploaded or processing error) through message boxes.
+
+Color and Design:
+Appropriate colors are used for buttons and text to ensure a simple and easy-to-understand interface.
+
+Constraints
+The data file must contain the specified columns and follow the correct format; otherwise, it will not be processed.
+Data should be in the specified time intervals with a valid date format (YYYYMMDD) and valid price data.
+The program only supports .txt and .prn files.
+Phases and Deliverables
+Design and implementation of the GUI
+Implementation of 20/50 and 100/200 strategies for data analysis
+Displaying buy and sell signals on the chart and calculating total profit
+Final version delivery with testing and debugging
+Libraries and Dependencies
+Required Libraries:
 pandas
 numpy
 tkinter
 matplotlib
-(توجه: کتابخانه tkinter به‌صورت پیش‌فرض با Python نصب می‌شود و نیازی به نصب جداگانه ندارد).
+Note: Tkinter is included by default with Python and does not require separate installation.
