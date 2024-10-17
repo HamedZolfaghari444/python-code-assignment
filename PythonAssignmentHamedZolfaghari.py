@@ -148,12 +148,12 @@ def create_gui():
 
     # MA Strategy 100/200 Button
     ma_100_200_button = tk.Button(window, text="Short MA: 100 - Long MA: 200", command=choose_ma_100_200, 
-                                  font=("Helvetica", 12), bg="#FF9800", fg="white", padx=10, pady=5)
+                                  font=("Helvetica", 12), bg="#03A9F4", fg="white", padx=10, pady=5)
     ma_100_200_button.pack(pady=5)
 
     # View Results Button
     results_button = tk.Button(window, text="📊 View Results", command=view_results, font=("Helvetica", 14), 
-                               bg="#9C27B0", fg="white", padx=20, pady=10)
+                               bg="#4CAF50", fg="white", padx=20, pady=10)
     results_button.pack(pady=10)
 
     # Exit Button
